@@ -37,7 +37,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        input(message: 'Desea Realizar un Deploy?', id: 'deploy', ok: 'Esta Seguro?')
+        input(message: 'Desea Realizar un Deploy?', id: 'deploy', ok: 'Iniciar Deploy')
         echo 'Comenzamos con el Deploy!'
         echo 'Deploy Finalizado'
       }
