@@ -1,1 +1,1 @@
-# blue-ocean
+# Blue Ocean Pipeline Repository
