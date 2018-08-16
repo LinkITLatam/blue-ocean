@@ -31,6 +31,7 @@ pipeline {
         stage('Performance Test') {
           steps {
             echo 'No nos olvidemos de la performance ! Ejecutando Tests!'
+            echo 'Agregamos mas tests!'
           }
         }
       }
