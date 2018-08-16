@@ -28,6 +28,11 @@ pipeline {
             echo 'Ejecutando Smoke Tests!'
           }
         }
+        stage('Test Performance') {
+          steps {
+            echo 'Performmance Tests'
+          }
+        }
       }
     }
     stage('Checkpoint') {
