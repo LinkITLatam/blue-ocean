@@ -37,7 +37,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        input 'sta Seguro que desea generar un deployment ?'
+        input 'Esta Seguro que desea generar un deployment ?'
         echo 'Continuamos con el Deployment !'
         echo 'Deployment Completo !'
       }
