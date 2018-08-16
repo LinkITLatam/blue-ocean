@@ -31,6 +31,7 @@ pipeline {
         stage('Performance Tests') {
           steps {
             echo 'Ahora si estamos completos!'
+            echo 'Todo de diez!'
           }
         }
       }
