@@ -28,6 +28,11 @@ pipeline {
             echo 'Donde hay humo, hay fuego!'
           }
         }
+        stage('Performance Tests') {
+          steps {
+            echo 'Ahora si estamos completos!'
+          }
+        }
       }
     }
     stage('Checkpoint') {
