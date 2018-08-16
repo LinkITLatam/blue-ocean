@@ -31,6 +31,7 @@ pipeline {
         stage('Test Performance') {
           steps {
             echo 'Performmance Tests'
+            echo 'Performmance Tests 2'
           }
         }
       }
