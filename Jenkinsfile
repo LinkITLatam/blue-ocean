@@ -11,9 +11,36 @@ pipeline {
         input '"Build Completo! Ejecutar Tests? Se ejecutaran en Paralelo !"'
       }
     }
-  }
-  environment {
-    GIT_CREDENTIALS_ID = 'gitHub-credentials'
-    GIT_CREDENTIALS_OBJECT = 'credentials("${GIT_CREDENTIALS_ID}"'
+    stage('Unit Tests') {
+      parallel {
+        stage('Unit Tests') {
+          steps {
+            echo 'Los Unit Tests son Maravillosos !'
+          }
+        }
+        stage('Integration Tests') {
+          steps {
+            echo 'Los Integration Tests son Maravillosos !'
+          }
+        }
+        stage('Smoke Tests') {
+          steps {
+            echo 'Donde hay humo hay fuego !!'
+          }
+        }
+      }
+    }
+    stage('CheckPoint') {
+      steps {
+        checkpoint 'Testing Completo'
+      }
+    }
+    stage('Deploy') {
+      steps {
+        input 'sta Seguro que desea generar un deployment ?'
+        echo 'Continuamos con el Deployment !'
+        echo 'Deployment Completo !'
+      }
+    }
   }
 }
