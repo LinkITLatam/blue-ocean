@@ -23,6 +23,11 @@ pipeline {
             echo 'Executing unit testing'
           }
         }
+        stage('Smoke Test') {
+          steps {
+            echo 'smoke tests done!'
+          }
+        }
       }
     }
     stage('Checkpoint') {
